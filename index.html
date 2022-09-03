@@ -12,29 +12,32 @@
   <body>
     <!-- Judul To Do List -->
     <header>
-      <h1>TO DO APPS</h1>
+      <h1>NOTES</h1>
     </header>
 
     <!-- Bungkus dari body -->
     <div class="wrapper">
       <div class="container bg-white shadow">
-        <h2 class="container-header text-center">Apa yang akan anda kerjakan ?</h2>
+        <h2 class="container-header text-center">WHAT'S YOUR PLAN ?</h2>
         <form class="form" action="#" id="form">
+          <!-- Form input rencana -->
           <div class="form-group form-title">
-            <label for="title" class="title">Masukkan hal yang akan dilakukan</label>
-            <input type="text" id="title" name="title" required />
+            <label for="title" class="title">Input what to do</label>
+            <input type="text" id="title" name="title" maxlength="12" required />
+            <label id="notifKarakter">Remaining character: <span id="hitung">0</span></label>
           </div>
+          <!-- Form input deadline -->
           <div class="form-group form-title">
-            <label for="date" class="date">Masukkan <i>deadline</i> pekerjaan</label>
+            <label for="date" class="date">Input deadline</label>
             <input type="date" id="date" name="date" required />
           </div>
           <input type="submit" value="Submit" name="Submit" class="btn-submit" />
         </form>
-        <!-- Bungkus dari wadah To Do List yang akan diisi -->
+        <!-- Bungkus dari To Do List yang akan diisi -->
         <div class="container wadah">
-          <h2 class="container-header">Rencana anda :</h2>
+          <h2 class="container-header">This is your plan:</h2>
           <div class="list-item" id="todos"></div>
-          <h2 class="container-header">Yang sudah dilakukan:</h2>
+          <h2 class="container-header">Plan completed:</h2>
           <div class="list-item" id="completed-todos"></div>
         </div>
       </div>

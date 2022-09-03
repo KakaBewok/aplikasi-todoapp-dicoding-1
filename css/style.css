@@ -6,30 +6,16 @@
 
 html,
 body {
-  font-family: poppins;
+  font-family: Raleway;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: plum;
 }
-.title,
-.date {
-  font-size: 21px;
-  color: purple;
-}
-#title,
-#date {
-  font-size: 20px;
-  color: purple;
-}
-.container h2 {
-  color: purple;
-}
+
 header {
-  background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
-  padding: 7px;
+  background: #5f30e2;
+  padding: 16px;
   color: white;
-  letter-spacing: 2px;
 }
 
 .wrapper {
@@ -39,17 +25,13 @@ header {
 }
 
 .wrapper .container {
-  width: 45%;
-  border-radius: 10px;
-  margin: 30px;
+  width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
   background: #f8f9fa;
-  padding: 15px;
+  padding: 16px;
   flex-grow: 1;
   height: fit-content;
-}
-.container.wadah {
-  width: 90%;
-  margin: auto;
 }
 
 .item {
@@ -71,8 +53,8 @@ header {
 
 .form {
   display: flex;
-  flex-direction: column;
   padding: 16px;
+  flex-direction: column;
   height: 300px;
   border-radius: 16px;
 }
@@ -85,6 +67,7 @@ header {
 .form-group label {
   margin-bottom: 4px;
   font-size: 18;
+  font-weight: lighter;
 }
 
 .shadow {
@@ -93,32 +76,32 @@ header {
 
 input[type="text"],
 input[type="date"] {
-  font-family: poppins;
+  font-family: Raleway;
   background: #f5f1ff;
-  border: 2px solid purple;
-  border-radius: 10px;
-  padding: 10px;
+  border: 2px solid #9475ea;
+  border-radius: 8px;
+  padding: 16px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 24px;
 }
 
 .btn-submit {
   width: fit-content;
   border: none;
-  font-family: poppins;
-  border-radius: 10px;
-  padding: 8px 11px;
-  border: 2px solid purple;
-  color: purple;
-  font-size: 20px;
+  font-family: Raleway;
+  border-radius: 16px;
+  padding: 12px 24px;
+  border: 2px solid #5f30e2;
+  color: black;
+  font-size: 24px;
   margin-top: auto;
   align-self: flex-end;
   cursor: pointer;
 }
 
 .btn-submit:hover {
-  background: purple;
+  background: #5f30e2;
   color: white;
 }
 
@@ -188,11 +171,11 @@ input[type="date"],
 
 @media only screen and (max-width: 1024px) {
   .wrapper {
-    margin: 0 3px;
+    margin: 0;
   }
 
   .wrapper .container {
-    width: 95%;
+    width: 100%;
   }
 
   .list-item {
@@ -202,7 +185,4 @@ input[type="date"],
   .form {
     width: 100%;
   }
-}
-.list-item {
-  text-align: center;
 }
